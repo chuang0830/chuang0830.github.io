@@ -33,29 +33,6 @@ p {
     font-size: 15px;
 }
 
-a {
-    font-size: 15px;
-    font-weight: bold;
-    color: var(--primary-color);
-    text-decoration: none;
-    position: relative;
-}
-
-
-a::after {
-    display: block;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 0%;
-    border-bottom: 1px currentColor solid;
-}
-
-a:hover::after {
-    width: 100%;
-    transition: .2s ease-in-out;
-}
-
 main {
     margin-top: 50px;
     display: flex;
@@ -69,6 +46,13 @@ main {
     border-radius: 8px;
     overflow: hidden;
     position: relative;
+    color: #000;
+    text-decoration: none;
+    transition: ease-in-out;
+}
+
+a.item:hover {
+    transform: translateY(-5px);
 }
 
 .item_img {
